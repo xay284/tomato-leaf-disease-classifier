@@ -65,7 +65,7 @@ streamlit run app.py
 
 To retrain, download the 6 tomato classes (about 163 MB) with a sparse Git checkout:
 ```bash
-cd data
+mkdir data && cd data
 git clone --filter=blob:none --no-checkout --depth 1 https://github.com/spMohanty/PlantVillage-Dataset PlantVillage-repo
 cd PlantVillage-repo
 git sparse-checkout init --cone
